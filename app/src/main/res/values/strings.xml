@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Time is Money</string>
+    <string name="facebook_app_id">943613083068935</string>
+    <string name="fb_login_protocol_scheme">fb943613083068935</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitcoinnnn"
+    android:orientation="vertical"
+    tools:context=".Activity.activity.Registro">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        tools:srcCompat="@drawable/logo_nvo" />
+    <EditText
+        android:id="@+id/et_nome_registro"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_dados"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:drawablePadding="5dp"
+        android:hint="Nome"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorbranco"
+        android:textColorHint="@color/colorbranco" />
+    <EditText
+        android:id="@+id/et_email_registro"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_dados"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:drawablePadding="5dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorbranco"
+        android:textColorHint="@color/colorbranco" />
+
+    <EditText
+        android:id="@+id/et_senha_registro"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ed_dados"
+        android:drawableLeft="@drawable/ic_action_ed_senha"
+        android:drawableRight="@drawable/ic_action_ed_senha_visibiliy"
+        android:drawablePadding="5dp"
+        android:hint="Senha"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColorHint="@color/colorbranco" />
+    <EditText
+        android:id="@+id/et_confir_senha_registro"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ed_dados"
+        android:drawableLeft="@drawable/ic_action_ed_senha"
+        android:drawableRight="@drawable/ic_action_ed_senha_visibiliy"
+        android:drawablePadding="5dp"
+        android:hint="Senha"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColorHint="@color/colorbranco" />
+    <CheckBox
+        android:id="@+id/mostra_senha_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Mostrar Senha"
+        android:textColor="@color/colorbranco"
+        android:buttonTint="@color/colorbranco"/>
+
+    <Button
+        android:id="@+id/bt_registrar_registro"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bt_loginregistro"
+        android:text="Registrar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/bt_entrar_registro"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ed_dados"
+        android:text="Entrar"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="@color/colorbranco" />
+
+</LinearLayout>

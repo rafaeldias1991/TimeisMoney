@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitcoinnnn"
+    android:visibility="visible"
+    android:orientation="vertical"
+    tools:context=".Activity.activity.Login">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="255dp"
+                android:layout_height="232dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/logo_nvo" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ed_dados"
+                android:drawableLeft="@drawable/ic_action_name"
+                android:drawablePadding="5dp"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/colorbranco"
+                android:textColor="@color/colorbranco"/>
+
+            <EditText
+                android:id="@+id/et_senha"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ed_dados"
+                android:drawableLeft="@drawable/ic_action_ed_senha"
+                android:drawableRight="@drawable/ic_action_ed_senha_visibiliy"
+                android:drawablePadding="5dp"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="@color/colorbranco"
+                android:textColor="@color/colorbranco"/>
+
+
+            <CheckBox
+                android:id="@+id/mostra_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/colorbranco"
+                android:text="Mostrar Senha"
+                android:textColor="@color/colorbranco" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_loginregistro"
+                android:text="Entrar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/bt_free"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_loginregistro"
+                android:onClick="acessaGrafico"
+                android:text="Gráfico de market cap"
+                android:textAllCaps="false"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="Esqueceu a senha ?"
+                android:textColor="@color/colorbranco" />
+
+            <Button
+                android:id="@+id/bt_entrar_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+
+                android:drawableLeft="@drawable/ic_google_icon_icons_com_62736"
+                android:drawablePadding="10dp"
+                android:text="Entrar com Google"
+                android:textColor="@color/colorbranco"
+                android:textSize="12sp"
+                />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/bt_entrar_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+
+                android:drawableLeft="@drawable/ic_facebook"
+                android:drawablePadding="10dp"
+                android:text="Entrar com FaceBook"
+                android:textColor="@color/colorbranco"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/br_registrar"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ed_dados"
+                android:text="Cadastre-se"
+                android:textAllCaps="false"
+                android:textColor="@color/colorbranco"
+                android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/lg_progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:indeterminate="true"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
